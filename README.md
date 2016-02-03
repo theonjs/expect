@@ -1,4 +1,4 @@
-# theon-expect [![Build Status](https://travis-ci.org/theonjs/expect.svg?branch=master)](https://travis-ci.org/theonjs/expect) [![npm version](https://badge.fury.io/js/expect.svg)](https://www.npmjs.com/package/expect)
+# theon-expect [![Build Status](https://travis-ci.org/theonjs/expect.svg?branch=master)](https://travis-ci.org/theonjs/expect) [![npm version](https://badge.fury.io/js/theon-expect.svg)](https://www.npmjs.com/package/theon-expect)
 
 HTTP assertions made easy for [theon](http://github.com/h2non/theon) based API clients.
 
