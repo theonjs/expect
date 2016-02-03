@@ -1,0 +1,34 @@
+{
+  "name": "theon-expect",
+  "version": "0.1.0",
+  "description": "HTTP expectation and testing library for theon based API clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "nock": "^7.0.2",
+    "should": "~7.0.2",
+    "standard": "^5.4.1",
+    "theon": "^0.1.27"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "theon",
+    "request",
+    "tdd",
+    "bdd",
+    "http",
+    "test",
+    "testing"
+  ],
+  "author": "Tomas Aparicio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theonjs/expect.git"
+  }
+}
