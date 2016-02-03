@@ -1,19 +1,12 @@
 const expect = require('..')
-const should = require('should')
-const theon = require('theon')
+// const should = require('should')
+const theon = expect(require('theon'))
 
 describe('expect', function () {
-  it('should be supported', function (done) {
-
-    app.get('/', function (req, res) {
-      res.send('hello')
-    })
-
-    var s = app.listen(function () {
-      var url = 'http://localhost:' + s.address().port
-      request(url)
-        .get('/')
-        .expect('hello', done)
-    })
+  it.skip('should be supported', function (done) {
+    const api = theon('http://localhost')
+      .resource('foo')
+      .render()
+    api.foo().end(done)
   })
 })

@@ -1,6 +1,5 @@
 const nock = require('nock')
 const expect = require('./')
-const express = require('express')
 const theon = expect(require('theon'))
 
 // Set up mock
@@ -32,7 +31,7 @@ api
   // Attach an observer for the current request at API client level
   .expect(200)
   .expect('Content-Type', 'application/json')
-  .expect([{"id":"123","username":"foo"}])
+  .expect([{ id: '123', username: 'foo' }])
   .expect(res => {
     if (res.error) {
       throw new Error('Invalid request')

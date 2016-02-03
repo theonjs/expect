@@ -4,7 +4,7 @@
   "description": "HTTP expectation and testing library for theon based API clients",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha"
+    "test": "standard && mocha 'test/**/*.js'"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
@@ -30,5 +30,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/theonjs/expect.git"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
   }
 }
