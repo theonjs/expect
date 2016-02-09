@@ -1,6 +1,6 @@
 # theon-expect [![Build Status](https://travis-ci.org/theonjs/expect.svg?branch=master)](https://travis-ci.org/theonjs/expect) [![npm version](https://badge.fury.io/js/theon-expect.svg)](https://www.npmjs.com/package/theon-expect) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-HTTP assertions made easy for [theon](http://github.com/h2non/theon) based API clients.
+HTTP assertions made easy for [theon](http://github.com/h2non/theon) based API clients. Inspired by [supertest](https://github.com/visionmedia/supertest).
 
 ## Motivation
 
