@@ -1,8 +1,14 @@
 {
   "name": "theon-expect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HTTP expectation and testing library for theon based API clients",
   "main": "index.js",
+  "author": "Tomas Aparicio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theonjs/expect.git"
+  },
   "scripts": {
     "test": "standard && mocha 'test/**/*.js'"
   },
@@ -25,12 +31,6 @@
     "test",
     "testing"
   ],
-  "author": "Tomas Aparicio",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/theonjs/expect.git"
-  },
   "standard": {
     "globals": [
       "describe",

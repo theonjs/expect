@@ -3,11 +3,10 @@ const bind = require('./lib/bind')
 const assertions = require('./lib/assertions')
 
 /**
- * Test against the given `theon`,
- * returning a new `Test`.
+ * Test against the given `theon`, returning a new `Test` capable interface.
  *
  * @param {Object} theon
- * @api public
+ * @return {Theon}
  */
 
 module.exports = function (theon) {
@@ -31,3 +30,9 @@ module.exports.bind = bind
  */
 
 module.exports.assertions = assertions
+
+/**
+ * Expose `VERSION`
+ */
+
+module.exports.VERSION = require('../package.json').version
