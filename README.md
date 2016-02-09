@@ -1,11 +1,11 @@
-# theon-expect [![Build Status](https://travis-ci.org/theonjs/expect.svg?branch=master)](https://travis-ci.org/theonjs/expect) [![npm version](https://badge.fury.io/js/theon-expect.svg)](https://www.npmjs.com/package/theon-expect)
+# theon-expect [![Build Status](https://travis-ci.org/theonjs/expect.svg?branch=master)](https://travis-ci.org/theonjs/expect) [![npm version](https://badge.fury.io/js/theon-expect.svg)](https://www.npmjs.com/package/theon-expect) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 HTTP assertions made easy for [theon](http://github.com/h2non/theon) based API clients.
 
-## About
+## Motivation
 
 The motivation with this module is to provide a high-level abstraction for testing
-HTTP, while still allowing you to drop down to the lower-level API provided by super-agent.
+HTTP layers, while still allowing you to drop down to the lower-level API provided by `theon`.
 
 ## Features
 
@@ -46,6 +46,11 @@ api.users
   .expect(200)
   .expect('Content-Type', /json/i)
   .expect({ id: 1234, username: 'foo' })
+  .expect(res => {
+    if (res.status > 300) {
+      throw new Error('invalid status code')
+    }
+  })
   .end((err, res) => {
     if (err) {
       return console.error('Expect error:', err)
@@ -86,7 +91,7 @@ myApi.users
   .expect(hasPreviousAndNextKeys)
   .end(done)
 
-function hasPreviousAndNextKeys(res) {
+function hasPreviousAndNextKeys (res) {
   if (!('next' in res.body)) return "missing next key"
   if (!('prev' in res.body)) throw new Error("missing prev key")
 }
