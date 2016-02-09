@@ -35,4 +35,4 @@ module.exports.assertions = assertions
  * Expose `VERSION`
  */
 
-module.exports.VERSION = require('../package.json').version
+module.exports.VERSION = require('./package.json').version
