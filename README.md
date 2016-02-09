@@ -13,9 +13,9 @@ HTTP layers, while still allowing you to drop down to the lower-level API provid
 - Dead simple declarative API
 - HTTP status code expectation
 - HTTP headers expections
+- RegExp based matching for body and headers
 - Response bodies comparison supporting deep assertions
 - Custom function expectations
-- Build-in promises support
 
 ## Installation
 
