@@ -1,6 +1,6 @@
 {
   "name": "theon-expect",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "HTTP expectation and testing library for theon based API clients",
   "main": "index.js",
   "author": "Tomas Aparicio",
