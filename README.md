@@ -33,7 +33,8 @@ const theon = expect(require('theon'))
 
 // Declare your API
 const api = theon('http://api.server.com')
-  .collection('/users')
+  .collection('users')
+  .basePath('/users')
   .set('Version', '1.0')
   .resource('getById')
   .path('/:id')
